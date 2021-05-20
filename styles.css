@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #333333;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  height: clamp(300px, 31.5vw, 1000px);
+  background-image: url(".././img/hero-DesktopTemplate.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-container-logo {
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  margin: auto;
+  margin-bottom: 15%;
+  height: 150px;
+  width: 150px;
+}
+
+.big-container {
+  background-color: #ebebeb;
+}
+
+.form-outer-container {
+  padding: 20px;
+  background-color: #ebebeb;
+}
+.form-outer-container .form-inner-container {
+  background-color: white;
+}
+.form-outer-container .required-field {
+  text-align: right;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 60px;
+  margin-top: 80px;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(77deg, #7c3688 0%, #cd3f65 62%, #ea7e3f 100%);
+}
+
+.secondary-CTA {
+  background: linear-gradient(77deg, #464fa2 0%, #2d68b2 46%, #0089cc 100%);
+  color: #fff;
+  text-align: center;
+  height: clamp(500px, 31.5vw, 740px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  padding: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

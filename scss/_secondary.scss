@@ -1,0 +1,16 @@
+.secondary-CTA {
+	background: linear-gradient(
+		77deg,
+		rgba(70, 79, 162, 1) 0%,
+		rgba(45, 104, 178, 1) 46%,
+		rgba(0, 137, 204, 1) 100%
+	);
+	color: #fff;
+
+	text-align: center;
+	height: clamp(500px, 31.5vw, 740px);
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

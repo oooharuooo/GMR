@@ -1,0 +1,20 @@
+.hero {
+	display: flex;
+
+	height: clamp(300px, 31.5vw, 1000px);
+	background-image: url(".././img/hero-DesktopTemplate.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&-container-logo {
+		color: white;
+		text-align: center;
+		border: 1px solid white;
+
+		margin: auto;
+		margin-bottom: 15%;
+
+		height: 150px;
+		width: 150px;
+	}
+}
