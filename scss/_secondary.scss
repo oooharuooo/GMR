@@ -9,8 +9,14 @@
 
 	text-align: center;
 	height: clamp(500px, 31.5vw, 740px);
-	
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	p {
+		@media (min-width: 1024px) {
+			font-size: 12px;
+		}
+	}
 }

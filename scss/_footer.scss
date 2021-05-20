@@ -1,7 +1,11 @@
 footer {
 	padding: 20px;
-}
-.links {
-	display: flex;
-	gap: 10px;
+	@media (min-width: 1024px) {
+		padding: 20px 300px;
+	}
+
+	.links {
+		display: flex;
+		gap: 10px;
+	}
 }

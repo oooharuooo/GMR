@@ -1,11 +1,18 @@
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  position: relative;
 }
 
 header {
   background-color: #333333;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 .hero {
@@ -25,16 +32,55 @@ header {
   width: 150px;
 }
 
+@media (min-width: 1024px) {
+  .blank-page {
+    height: 725px;
+  }
+}
+
 .big-container {
   background-color: #ebebeb;
+  padding: 15px;
+}
+@media (min-width: 1024px) {
+  .big-container {
+    padding: 30px;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+}
+
+.intro-copy {
+  text-align: center;
+}
+.intro-copy h1 {
+  text-transform: uppercase;
 }
 
 .form-outer-container {
-  padding: 20px;
   background-color: #ebebeb;
 }
 .form-outer-container .form-inner-container {
   background-color: white;
+  padding: 20px;
+}
+.form-outer-container .form-inner-container .bold-text {
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .form-outer-container .form-inner-container .form-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form-outer-container .form-inner-container .form-info input {
+    flex-basis: 45%;
+  }
+  .form-outer-container .form-inner-container .form-info input[name=address] {
+    flex-basis: 100%;
+  }
 }
 .form-outer-container .required-field {
   text-align: right;
@@ -45,6 +91,9 @@ header {
   flex-direction: column;
   gap: 20px;
 }
+.form-info input {
+  height: 50px;
+}
 
 .submit-btn {
   width: 100%;
@@ -53,6 +102,9 @@ header {
   font-size: 20px;
   color: white;
   background: linear-gradient(77deg, #7c3688 0%, #cd3f65 62%, #ea7e3f 100%);
+}
+.submit-btn:hover {
+  background: #7c3688;
 }
 
 .secondary-CTA {
@@ -64,12 +116,21 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 1024px) {
+  .secondary-CTA p {
+    font-size: 12px;
+  }
+}
 
 footer {
   padding: 20px;
 }
-
-.links {
+@media (min-width: 1024px) {
+  footer {
+    padding: 20px 300px;
+  }
+}
+footer .links {
   display: flex;
   gap: 10px;
 }
