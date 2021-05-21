@@ -1,0 +1,37 @@
+.opacity {
+	opacity: 0;
+}
+
+.slide-up-effect {
+	animation: Slide_up 0.8s ease-in-out;
+}
+.submit-btn {
+	&:hover {
+		cursor: pointer;
+		animation: Fade_in 0.3s ease-in-out;
+		background: rgba(124, 54, 136);
+	}
+}
+
+@keyframes Slide_up {
+	0% {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	75% {
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes Fade_in {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}

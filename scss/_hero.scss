@@ -14,7 +14,6 @@
 		margin: auto;
 		margin-bottom: 15%;
 
-		height: 150px;
-		width: 150px;
+		@include widthHeight(150px, 150px);
 	}
 }

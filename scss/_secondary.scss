@@ -10,8 +10,7 @@
 	text-align: center;
 	height: clamp(500px, 31.5vw, 740px);
 
-	display: flex;
-	flex-direction: column;
+	@include flexColumn;
 	justify-content: center;
 
 	p {

@@ -1,3 +1,38 @@
+.opacity {
+  opacity: 0;
+}
+
+.slide-up-effect {
+  animation: Slide_up 0.8s ease-in-out;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  animation: Fade_in 0.3s ease-in-out;
+  background: #7c3688;
+}
+
+@keyframes Slide_up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes Fade_in {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -28,8 +63,8 @@ header {
   border: 1px solid white;
   margin: auto;
   margin-bottom: 15%;
-  height: 150px;
   width: 150px;
+  height: 150px;
 }
 
 @media (min-width: 1024px) {
@@ -102,9 +137,6 @@ header {
   font-size: 20px;
   color: white;
   background: linear-gradient(77deg, #7c3688 0%, #cd3f65 62%, #ea7e3f 100%);
-}
-.submit-btn:hover {
-  background: #7c3688;
 }
 
 .secondary-CTA {
